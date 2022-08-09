@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400&display=swap');
 @keyframes puff-in-center{0%{transform:scale(2);filter:blur(4px);opacity:0}100%{transform:scale(1);filter:blur(0);opacity:1}}
 @-webkit-keyframes tracking-out-contract{0%{opacity:1}50%{opacity:1}100%{letter-spacing:-.5em;opacity:0}}@keyframes tracking-out-contract{0%{opacity:1}50%{opacity:1}100%{letter-spacing:-.5em;opacity:0}}
+@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+@keyframes rotate-scale-up{0%{transform:scale(1) rotateZ(0)}50%{transform:scale(2) rotateZ(180deg)}100%{transform:scale(1) rotateZ(360deg)}}
 
 
 body{
@@ -76,11 +78,12 @@ img{
 form{
     color:antiquewhite;
     border: groove 8px bisque;
-    background-color: lightslategray;
     text-align: center;
     font-size: 1rem;
     width: 100%;
-    height: 300px;    
+    height: 300px; 
+    background: rgb(154,185,186);
+    background: linear-gradient(90deg, rgba(154,185,186,0.8477951635846372) 22%, rgba(96,132,150,1) 47%);   
 }
 
 ul{
@@ -126,6 +129,8 @@ section{
 }
 
 
+
+
 /*borde*/
 
 .borde{
@@ -142,7 +147,8 @@ section{
 }
 
 #dos{
-    width: 500px;   
+    width: 500px;  
+    animation:rotate-scale-up .65s linear both; 
 }
 
 
@@ -292,6 +298,10 @@ section{
     box-shadow: 3px 3px 5px #000;
     -webkit-backface-visibility: hidden;
   }
+
+  .fade-in{animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both
+}
+
 
 
 /*GRIDS*/
