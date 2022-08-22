@@ -1,0 +1,178 @@
+/*Estilos generales*/
+
+
+
+
+header{
+    font-family:'Cormorant SC', serif ;
+}
+
+main{
+    font-family: 'Cormorant SC', serif;
+}
+
+footer{
+    font-family: 'Cormorant SC', serif;
+    nav{
+        text-align: center;
+        li{
+        list-style: none;
+    }
+}
+}
+
+
+   
+h1{
+    color:antiquewhite;
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 10px;
+    border: groove 7px antiquewhite;
+}
+
+h2{
+    color: black;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-align: center;
+}
+
+h3{
+    background-color: bisque;
+    color: grey;
+    font-size: 1rem;
+    font-style: italic;
+    margin-top: 100px;
+}
+
+
+
+span{
+    background-color: transparent;
+    padding: 5px 10px;
+    -webkit-animation:text-blur-out 1.2s cubic-bezier(.55,.085,.68,.53) alternate-reverse both;animation:text-blur-out 1.2s cubic-bezier(.55,.085,.68,.53) alternate-reverse both;
+}
+   
+   span:hover{
+    background-color: bisque;
+    border-left:solid 12px firebrick;
+    
+}
+
+img{
+    width:100%;
+}
+
+form{
+    color:antiquewhite;
+    border: groove 8px bisque;
+    text-align: center;
+    font-size: 1rem;
+    width: 100%;
+    height: 300px; 
+    background: rgb(154,185,186);
+    background: linear-gradient(90deg, rgba(154,185,186,0.8477951635846372) 22%, rgba(96,132,150,1) 47%);   
+}
+
+
+
+section{
+    margin-top: 100px;
+    margin-bottom:100px
+}
+
+/*ID*/
+
+
+
+
+#dos{
+    width: 500px;  
+    animation:rotate-scale-up .65s linear both; 
+}
+
+
+/*clases*/
+
+.main-content{
+    max-width: 1400px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.image-wrapper{
+    width: 30%;
+    padding: 15px;
+}
+
+.text-wrapper{
+    width: 70%;
+    padding: 15px;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+.link{
+    display:block;
+    margin-top: 15px;
+}
+
+
+
+.logo{
+    max-width: 300px;
+    margin:0 auto;
+    width:100%;
+    animation:puff-in-center .7s cubic-bezier(.47,0.000,.745,.715) both;
+}
+
+.pie{
+    font-size: 1rem;
+    text-align: start;
+    background-color: bisque;
+}
+
+
+
+.image {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+
+  .image:hover {
+    transform: scale(1.5 );
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-box-shadow: 3px 3px 5px #000;
+    -moz-box-shadow: 3px 3px 5px #000;
+    box-shadow: 3px 3px 5px #000;
+    -webkit-backface-visibility: hidden;
+  }
+
+  .menua{
+    color:black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+  .fade-in{animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both
+}
+
+
+
+

@@ -1,0 +1,70 @@
+
+/*Importar*/
+@import "fonts";
+@import "animaciones";
+@import "responsive";
+@import "grids";
+@import "flexbox";
+@import "boxmodel";
+@import "estilosgenerales";
+
+/*variables*/
+
+$negrito: black;
+
+body{
+    background-image:url(https://img.freepik.com/free-photo/cardboard-sheet-paper-abstract-texture-background_7182-2105.jpg?size=626&ext=jpg);
+    font-family: 'Cormorant SC', serif;  
+    font-size: 1.1rem;
+    color: $negrito;
+    line-height: 1.3;
+    text-align: justify;
+}
+
+
+p{ 
+    color:$negrito;
+    text-align: justify;
+    font-size: 20px;
+    width: 100%;  
+}
+
+h2{
+    color: $negrito;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#uno{
+    width: 100%;
+    border: $negrito;
+}
+
+.menua{
+    color:$negrito;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/*anidamiento*/
+
+footer{
+    font-family: 'Cormorant SC', serif;
+    nav{
+        text-align: center;
+        li{
+        list-style: none;
+    }
+}
+}
