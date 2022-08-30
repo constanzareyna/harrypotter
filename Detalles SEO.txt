@@ -1,0 +1,18 @@
+CEO
+
+Agregue titulos a cada HTML
+
+1-Index - Harry Potter y sus amigos
+2-Peliculas
+3-Personajes
+4-Multimedia
+5-Contacto
+
+Agregue Keywords
+
+<meta name="keywords" content="Harry Potter, Peliculas, JkRowling, Ron, Hermione, Voldenmort">
+
+Agregue Description 
+
+<meta name="description" content="No es una página oficial, solo es una página fandom de Harry Potter">
+

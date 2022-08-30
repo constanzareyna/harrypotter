@@ -1,8 +1,5 @@
 /*Estilos generales*/
 
-
-
-
 header{
     font-family:'Cormorant SC', serif ;
 }
@@ -11,18 +8,6 @@ main{
     font-family: 'Cormorant SC', serif;
 }
 
-footer{
-    font-family: 'Cormorant SC', serif;
-    nav{
-        text-align: center;
-        li{
-        list-style: none;
-    }
-}
-}
-
-
-   
 h1{
     color:antiquewhite;
     font-size: 3rem;
@@ -48,8 +33,6 @@ h3{
     margin-top: 100px;
 }
 
-
-
 span{
     background-color: transparent;
     padding: 5px 10px;
@@ -60,10 +43,6 @@ span{
     background-color: bisque;
     border-left:solid 12px firebrick;
     
-}
-
-img{
-    width:100%;
 }
 
 form{
@@ -84,15 +63,9 @@ section{
     margin-bottom:100px
 }
 
+
 /*ID*/
 
-
-
-
-#dos{
-    width: 500px;  
-    animation:rotate-scale-up .65s linear both; 
-}
 
 
 /*clases*/
@@ -102,6 +75,7 @@ section{
     padding: 0 15px;
     margin: 0 auto;
 }
+
 
 .image-wrapper{
     width: 30%;
@@ -113,9 +87,6 @@ section{
     padding: 15px;
 }
 
-.reverse{
-    flex-direction: row-reverse;
-}
 
 .link{
     display:block;
@@ -159,18 +130,26 @@ section{
     -webkit-backface-visibility: hidden;
   }
 
-  .menua{
-    color:black;
-    text-decoration: none;
-    display: inline-block;
-    padding: 15px;
-    line-height: normal;
-    font-size: 22px;
-    font-weight: bold;
-    text-decoration: underline;
-}
+ 
+
 
   .fade-in{animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both
+}
+
+.pprincipal{
+    display: flex;
+    align-content: center;
+    border: groove 3px bisque;
+    
+}
+
+.imgpeliculas{
+    width: 200px;
+
+}
+
+img{
+    width: 100%;
 }
 
 
