@@ -1,4 +1,7 @@
 /*Estilos generales*/
+/*variables*/
+
+$negrito: black;
 
 header{
     font-family:'Cormorant SC', serif ;
@@ -6,6 +9,22 @@ header{
 
 main{
     font-family: 'Cormorant SC', serif;
+}
+
+body{
+    font-family: 'Cormorant SC', serif;  
+    font-size: 1.1rem;
+    color: $negrito;
+    line-height: 1.3;
+    text-align: justify;
+}
+
+
+p{ 
+    color:$negrito;
+    text-align: justify;
+    font-size: 20px;
+    width: 100%; 
 }
 
 h1{
@@ -19,11 +38,13 @@ h1{
 }
 
 h2{
-    color: black;
+    color: $negrito;
     font-size: 2rem;
     text-decoration: underline;
     text-align: center;
 }
+
+
 
 h3{
     background-color: bisque;
@@ -64,9 +85,20 @@ section{
 }
 
 
+
 /*ID*/
 
 
+#uno{
+    width: 100%;
+    color:$negrito;
+}
+
+#dos{
+    width: 300px;
+    margin-right:50px ;
+    border-radius: 50px;
+}
 
 /*clases*/
 
@@ -104,8 +136,10 @@ section{
 
 .pie{
     font-size: 1rem;
-    text-align: start;
     background-color: bisque;
+    border: solid 5px white;
+    border-radius: 10px;
+    height: 230px;
 }
 
 
@@ -144,7 +178,7 @@ section{
 }
 
 .imgpeliculas{
-    width: 200px;
+    width: 400px;
 
 }
 
@@ -152,6 +186,23 @@ img{
     width: 100%;
 }
 
+.linea {
+    border-top: 1px solid black;
+    height: 2px;
+    max-width: 700px;
+    padding-top: 20px;
+    margin: 20px auto 0 auto;
+
+  }
+
+  .redes{
+    margin-left: 10px ;
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
 
 
+.casas{
+    width: 120px;
+}
 

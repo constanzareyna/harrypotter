@@ -118,7 +118,6 @@
   grid-area: img8;
 }
 
-/*flex box*/
 /*Flexbox*/
 .is-flex {
   display: flex;
@@ -231,13 +230,33 @@
   padding-bottom: 20px;
 }
 
+.margen-multimedia {
+  margin-bottom: 500px;
+}
+
 /*Estilos generales*/
+/*variables*/
 header {
   font-family: "Cormorant SC", serif;
 }
 
 main {
   font-family: "Cormorant SC", serif;
+}
+
+body {
+  font-family: "Cormorant SC", serif;
+  font-size: 1.1rem;
+  color: black;
+  line-height: 1.3;
+  text-align: justify;
+}
+
+p {
+  color: black;
+  text-align: justify;
+  font-size: 20px;
+  width: 100%;
 }
 
 h1 {
@@ -294,6 +313,17 @@ section {
 }
 
 /*ID*/
+#uno {
+  width: 100%;
+  color: black;
+}
+
+#dos {
+  width: 300px;
+  margin-right: 50px;
+  border-radius: 50px;
+}
+
 /*clases*/
 .main-content {
   max-width: 1400px;
@@ -325,8 +355,10 @@ section {
 
 .pie {
   font-size: 1rem;
-  text-align: start;
   background-color: bisque;
+  border: solid 5px white;
+  border-radius: 10px;
+  height: 230px;
 }
 
 .image {
@@ -360,41 +392,118 @@ section {
 }
 
 .imgpeliculas {
-  width: 200px;
+  width: 400px;
 }
 
 img {
   width: 100%;
 }
 
+.linea {
+  border-top: 1px solid black;
+  height: 2px;
+  max-width: 700px;
+  padding-top: 20px;
+  margin: 20px auto 0 auto;
+}
+
+.redes {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.casas {
+  width: 120px;
+}
+
+/*Flexbox*/
+.is-flex {
+  display: flex;
+}
+
+.is-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.is-no-wrap {
+  flex-wrap: nowrap;
+}
+
+.is-no-wrap {
+  flex-wrap: wrap;
+}
+
+.is-justify-center {
+  justify-content: center;
+}
+
+.is-aling-center {
+  align-items: center;
+}
+
+.is-align-end {
+  align-items: flex-end;
+}
+
+.is-flex-column {
+  flex-direction: column;
+}
+
+.is-space-between {
+  justify-content: space-between;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.menu-flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.menu-flex2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.flex-imagen {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex: wrap;
+}
+
+.flex-music {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-video {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
+.flex-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-redes {
+  display: flex;
+  justify-content: end;
+  flex-flow: column;
+}
+
 /*variables*/
-body {
-  font-family: "Cormorant SC", serif;
-  font-size: 1.1rem;
-  color: black;
-  line-height: 1.3;
-  text-align: justify;
-}
-
-p {
-  color: black;
-  text-align: justify;
-  font-size: 20px;
-  width: 100%;
-}
-
-h2 {
-  color: black;
-  font-size: 2rem;
-  text-decoration: underline;
-  text-align: center;
-}
-
-#uno {
-  width: 100%;
-  color: black;
-}
-
 /*Anidacion*/
 footer {
   font-family: "Cormorant SC", serif;
@@ -443,7 +552,7 @@ footer nav li {
 }
 
 .menublanco {
-  color: rgb(213, 211, 211);
+  color: rgb(253, 252, 252);
 }
 
 /*Mixin*/
@@ -715,21 +824,6 @@ section div.youtube {
     grid-template-rows: 25% 25% 25% 25%;
     gap: 20px;
   }
-}
-.image-wrapper {
-  width: 100%;
-  padding: 15px;
-}
-
-.text-wrapper {
-  width: 100%;
-  padding: 15px;
-}
-
-.main-content {
-  max-width: 1400px;
-  padding: 0 15px;
-  margin: 0 auto;
 }
 
 /*# sourceMappingURL=estilos.css.map */

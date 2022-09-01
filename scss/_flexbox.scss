@@ -1,5 +1,3 @@
-/*flex box*/
-
 /*Flexbox*/
 
 .is-flex{
@@ -18,11 +16,9 @@
     flex-wrap: wrap;
 }
 
-
 .is-justify-center{
     justify-content:center;
 }
-
 
 .is-aling-center{
     align-items: center;
@@ -44,7 +40,7 @@
     flex-direction: row-reverse;
 }
 
- .menu-flex{
+.menu-flex{
         display:flex ;
         justify-content: space-around;
         flex-wrap: nowrap;
@@ -89,5 +85,4 @@
     display: flex;
     justify-content:end;
     flex-flow: column ;
-
 }

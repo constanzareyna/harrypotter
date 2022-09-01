@@ -8,43 +8,103 @@
 @import "boxmodel";
 @import "estilosgenerales";
 
+/*Flexbox*/
+
+.is-flex{
+    display:flex;
+}
+
+.is-flex-wrap{
+    flex-wrap: wrap;
+}
+
+.is-no-wrap{
+    flex-wrap: nowrap;
+}
+
+.is-no-wrap{
+    flex-wrap: wrap;
+}
+
+.is-justify-center{
+    justify-content:center;
+}
+
+.is-aling-center{
+    align-items: center;
+}
+
+.is-align-end{
+   align-items: flex-end;
+}
+
+.is-flex-column{
+    flex-direction: column;
+
+}
+.is-space-between{
+    justify-content: space-between;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+.menu-flex{
+        display:flex ;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+}
+
+
+.menu-flex2{
+    display:flex ;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.flex-imagen{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex: wrap;
+}
+
+
+.flex-music{
+    display: flex;
+    justify-content:center;
+}
+
+.flex-video{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.flex-form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-redes{
+    display: flex;
+    justify-content:end;
+    flex-flow: column ;
+}
+
+
+
 /*variables*/
 
-$negrito: black;
 $logo: 40%;
 $menu: 60%;
 $anchura: 100%;
 $altura: 500px;
-
-body{
-    font-family: 'Cormorant SC', serif;  
-    font-size: 1.1rem;
-    color: $negrito;
-    line-height: 1.3;
-    text-align: justify;
-}
-
-
-p{ 
-    color:$negrito;
-    text-align: justify;
-    font-size: 20px;
-    width: 100%;  
-}
-
-h2{
-    color: $negrito;
-    font-size: 2rem;
-    text-decoration: underline;
-    text-align: center;
-}
-
-#uno{
-    width: 100%;
-    color:$negrito;
-}
-
-
 
 /*Anidacion*/
 
@@ -93,7 +153,7 @@ footer{
 
 .menugris{
     @extend .menunegro;
-    color: grey
+    color: grey;
 }
 
 .menugriscla{
@@ -103,7 +163,7 @@ footer{
 
 .menublanco{
     @extend .menunegro;
-    color: rgb(213, 211, 211)
+    color: rgb(253, 252, 252)
 }
 
 
@@ -120,6 +180,8 @@ footer{
 p{
     @include tamaño ($anchura, 100%)
 }
+
+
 
 /*EACH*/
 
@@ -431,25 +493,7 @@ section div.youtube{
             gap: 20px;
         
         }
-
-     
-    }
-
-    .image-wrapper{
-        width: 100%;
-        padding: 15px;
-    }
-    
-    .text-wrapper{
-        width: 100%;
-        padding: 15px;
-    }
-
-    .main-content{
-        max-width: 1400px;
-        padding: 0 15px;
-        margin: 0 auto;
-    }
+ }
     
 
 
