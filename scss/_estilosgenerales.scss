@@ -134,8 +134,6 @@ form{
 
 
 .logo{
-    margin-left: 20px;
-    margin-right:350px;
     width: 200px;
     animation:puff-in-center .7s cubic-bezier(.47,0.000,.745,.715) both;
 }
@@ -144,6 +142,7 @@ form{
     font-size: 1rem;
     color: white; 
 }
+
 
 
 
@@ -220,21 +219,26 @@ img{
 
 .fondopeli{
     background-image: url(../multimedia/fondoazul.jpg);
+    width: 100%;
 }
 
 .fondoperso{
     background-image: url(../multimedia/fondonro.jpg);
+    width: 100%;
 }
 
 .fondomulti{
     background-image: url(../multimedia/fondorayo.jpg);
+    width: 100%;
 }
 
 .fondoindex{
     background-image: url(../multimedia/fondo\ parraf.jpeg);
+    width: 100%;
 }
 
 .fondocontacto{
     background-image: url(../multimedia/fondocontact.jpg);
+    width: 100%;
 }
 

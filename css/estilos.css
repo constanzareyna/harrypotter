@@ -170,18 +170,6 @@
   flex-direction: row-reverse;
 }
 
-.menu-flex {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: nowrap;
-}
-
-.menu-flex2 {
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-}
-
 .flex-imagen {
   display: flex;
   flex-direction: row;
@@ -360,8 +348,6 @@ form {
 }
 
 .logo {
-  margin-left: 20px;
-  margin-right: 350px;
   width: 200px;
   animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
@@ -441,22 +427,27 @@ img {
 
 .fondopeli {
   background-image: url(../multimedia/fondoazul.jpg);
+  width: 100%;
 }
 
 .fondoperso {
   background-image: url(../multimedia/fondonro.jpg);
+  width: 100%;
 }
 
 .fondomulti {
   background-image: url(../multimedia/fondorayo.jpg);
+  width: 100%;
 }
 
 .fondoindex {
   background-image: url(../multimedia/fondo\ parraf.jpeg);
+  width: 100%;
 }
 
 .fondocontacto {
   background-image: url(../multimedia/fondocontact.jpg);
+  width: 100%;
 }
 
 /*Flexbox*/
