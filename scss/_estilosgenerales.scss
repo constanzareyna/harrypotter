@@ -12,6 +12,7 @@ main{
 }
 
 body{
+    background-color: black;
     font-family: 'Cormorant SC', serif;  
     font-size: 1.1rem;
     color: $negrito;
@@ -19,13 +20,17 @@ body{
     text-align: justify;
 }
 
+footer{
+    background-color: rgb(50, 49, 49);
+}
 
 p{ 
-    color:$negrito;
+    color:white;
     text-align: justify;
     font-size: 20px;
-    width: 100%; 
+
 }
+
 
 h1{
     color:antiquewhite;
@@ -38,7 +43,7 @@ h1{
 }
 
 h2{
-    color: $negrito;
+    color: white;
     font-size: 2rem;
     text-decoration: underline;
     text-align: center;
@@ -54,13 +59,14 @@ h3{
     margin-top: 100px;
 }
 
-span{
+li{
     background-color: transparent;
     padding: 5px 10px;
+    list-style: none;
     -webkit-animation:text-blur-out 1.2s cubic-bezier(.55,.085,.68,.53) alternate-reverse both;animation:text-blur-out 1.2s cubic-bezier(.55,.085,.68,.53) alternate-reverse both;
 }
    
-   span:hover{
+   li:hover{
     background-color: bisque;
     border-left:solid 12px firebrick;
     
@@ -78,14 +84,6 @@ form{
 }
 
 
-
-section{
-    margin-top: 100px;
-    margin-bottom:100px
-}
-
-
-
 /*ID*/
 
 
@@ -98,6 +96,14 @@ section{
     width: 300px;
     margin-right:50px ;
     border-radius: 50px;
+}
+
+#tres{
+    background-image: url(../multimedia/fondoazul.jpg);
+}
+
+#cuatro{
+    background-image: url(../multimedia/fondonro.jpg);
 }
 
 /*clases*/
@@ -128,18 +134,15 @@ section{
 
 
 .logo{
-    max-width: 300px;
-    margin:0 auto;
-    width:100%;
+    margin-left: 20px;
+    margin-right:350px;
+    width: 200px;
     animation:puff-in-center .7s cubic-bezier(.47,0.000,.745,.715) both;
 }
 
 .pie{
     font-size: 1rem;
-    background-color: bisque;
-    border: solid 5px white;
-    border-radius: 10px;
-    height: 230px;
+    color: white; 
 }
 
 
@@ -164,21 +167,11 @@ section{
     -webkit-backface-visibility: hidden;
   }
 
- 
-
-
-  .fade-in{animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both
-}
-
-.pprincipal{
-    display: flex;
-    align-content: center;
-    border: groove 3px bisque;
-    
+ .fade-in{animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both;
 }
 
 .imgpeliculas{
-    width: 400px;
+    width: 300px;
 
 }
 
@@ -187,10 +180,11 @@ img{
 }
 
 .linea {
-    border-top: 1px solid black;
+    border-top: 1px solid white;
     height: 2px;
-    max-width: 700px;
+    max-width: 650px;
     padding-top: 20px;
+    margin-left: 20px;
     margin: 20px auto 0 auto;
 
   }
@@ -203,6 +197,44 @@ img{
 
 
 .casas{
-    width: 120px;
+    width: 80px;
+    padding-top: 15px;
+    margin-right: 30px;
+}
+
+.videotamaño{
+    width: 100%;
+}
+
+.parrafoprincipal{
+        color:white;
+        text-align: justify;
+        font-size: 20px;
+        width: 100%; 
+        padding: 15px;
+        margin: 30px;
+        border: solid 2px grey;
+        line-height: 40px;
+}
+
+
+.fondopeli{
+    background-image: url(../multimedia/fondoazul.jpg);
+}
+
+.fondoperso{
+    background-image: url(../multimedia/fondonro.jpg);
+}
+
+.fondomulti{
+    background-image: url(../multimedia/fondorayo.jpg);
+}
+
+.fondoindex{
+    background-image: url(../multimedia/fondoparra.jpg);
+}
+
+.fondocontacto{
+    background-image: url(../multimedia/fondocontact.jpg);
 }
 

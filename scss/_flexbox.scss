@@ -12,9 +12,6 @@
     flex-wrap: nowrap;
 }
 
-.is-no-wrap{
-    flex-wrap: wrap;
-}
 
 .is-justify-center{
     justify-content:center;
@@ -34,6 +31,10 @@
 }
 .is-space-between{
     justify-content: space-between;
+}
+
+.is-justify-end{
+justify-content: end;
 }
 
 .reverse{
@@ -86,3 +87,4 @@
     justify-content:end;
     flex-flow: column ;
 }
+

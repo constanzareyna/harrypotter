@@ -22,10 +22,6 @@
     flex-wrap: nowrap;
 }
 
-.is-no-wrap{
-    flex-wrap: wrap;
-}
-
 .is-justify-center{
     justify-content:center;
 }
@@ -50,18 +46,6 @@
     flex-direction: row-reverse;
 }
 
-.menu-flex{
-        display:flex ;
-        justify-content: space-around;
-        flex-wrap: nowrap;
-}
-
-
-.menu-flex2{
-    display:flex ;
-    justify-content: center;
-    flex-wrap: nowrap;
-}
 
 .flex-imagen{
     display: flex;
@@ -101,8 +85,6 @@
 
 /*variables*/
 
-$logo: 40%;
-$menu: 60%;
 $anchura: 100%;
 $altura: 500px;
 
@@ -118,108 +100,15 @@ footer{
 }
 }
 
-
-/*SASS 2*/
-/*Operadores*/
-
-.menu-wrapper{
-    width: calc($menu - 30px);
-    padding: 15px;
-}
-
-.logo-wrapper{
-    width: calc($logo - 30px);
-    padding: 15px;
-}
-
-
-/*Extend*/
-
-.menunegro{
-    color:rgb(30, 30, 30);
-    text-decoration: none;
-    display: inline-block;
-    padding: 15px;
-    line-height: normal;
-    font-size: 22px;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.menugrisosc{
-    @extend .menunegro;
-    color: rgb(56, 52, 52)
-}
-
-.menugris{
-    @extend .menunegro;
-    color: grey;
-}
-
-.menugriscla{
-    @extend .menunegro;
-    color: rgb(154, 151, 151)
-}
-
-.menublanco{
-    @extend .menunegro;
-    color: rgb(253, 252, 252)
-}
-
-
-
-/*Mixin*/
-
-@mixin tamaño ($anchura, $altura){ 
-
-    width: $anchura;
-    height: $altura;
-    
-}
-
-p{
-    @include tamaño ($anchura, 100%)
-}
-
-
-
 /*EACH*/
 
-@each $secciones in body, header, main, footer{
+
+@each $secciones in body, header, main{
 
     #{$secciones}{
-        background-image: url(https://img.freepik.com/free-photo/cardboard-sheet-paper-abstract-texture-background_7182-2105.jpg?size=626&ext=jpg) ;
+        background-color: black ;
     }
 }
-
-/*Mapas*/
-
-$mapa:(
-    twitter: groove 3px #55acee,
-    instagram: groove 3px rgb(143, 52, 143),
-    youtube: groove 3px red,
-
-);
-
-/*mapas con each*/
-
-@each $nombres, $bordecito in $mapa{
-
-    .boton-#{$nombres}{
-        border: $bordecito;
-    }
-}
-
-section div.twitter{ 
-    border: map-get($mapa, twitter);
-}
-section div.instagram{ 
-    border: map-get($mapa, instagram); 
-}
-section div.youtube{ 
-    border: map-get($mapa, youtube);
-}
-
 
 
 /*Responsive design con media queries*/
@@ -230,16 +119,10 @@ section div.youtube{
 
 @media (min-width: 1024px){
     /*header*/
-    .menu-wrapper{
-        width: calc($menu - 30px);
-        padding: 15px;
-    }
-    .logo-wrapper{
-        width: calc($logo - 30px);
-        padding: 15px;
-    }
 
     .image-wrapper{
+        display: flex;
+        justify-content: flex-start;
         width: 30%;
         padding: 15px;
     }
@@ -290,12 +173,6 @@ section div.youtube{
             grid-area: img8;
         }
         
-        .menu-flex{
-            display:flex ;
-            justify-content: space-around;
-            flex-wrap: nowrap;
-        }
-        
         .grid{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -308,25 +185,17 @@ section div.youtube{
             grid-template-rows: 50% 50%;
             gap: 20px;
         }
-    
-
- 
+        .is-no-wrap{
+            flex-wrap: nowrap;
+        }
 }
 
 /*tablet*/
 
-
 @media (min-width: 600px) and (max-width:1023px){
-    .menu-wrapper{
-        width: 100%;
-        padding: 15px;
-    }
-    .logo-wrapper{
-        width: calc(40% - 30px);
-        padding: 15px;
-    }
-
     .image-wrapper{
+        display: flex;
+        justify-content: center;
         width: 100%;
         padding: 15px;
     }
@@ -348,6 +217,7 @@ section div.youtube{
         grid-template-rows: 120px 600px 600px 600px 600px;
         gap:20px;
     }
+
     .titulo{
         grid-area: titulo;
         position: relative;
@@ -378,11 +248,6 @@ section div.youtube{
         grid-area: img8;
     }
 
-    .menu-flex{
-        display:flex ;
-        justify-content: space-around;
-        flex-wrap: nowrap;
-    }
     .grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -395,30 +260,18 @@ section div.youtube{
         grid-template-rows: 25% 25% 25% 25%;
         gap: 20px;
     }
+    .is-no-wrap{
+        flex-wrap: wrap;
+    }
 
 }
     
-
 /*smartphone*/
 
 @media (max-width: 599px){
-    .menu-wrapper{
-        width: 100%;
-        padding: 15px;  
-        text-align: center;  
-    }
-
-    .menu-flex{
-        display:flex ;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-
-    .logo-wrapper{
-        width: 300px;
-        padding: 15px;
-    }
     .image-wrapper{
+        display: flex;
+        justify-content: center;
         width: 100%;
         padding: 15px;
     }
@@ -474,11 +327,6 @@ section div.youtube{
         .img8{
             grid-area: img8;
         }
-        .menu-flex{
-            display:flex ;
-            flex-direction: column;
-            flex-wrap: nowrap;
-        }
 
         .grid{
             display: grid;
@@ -492,7 +340,11 @@ section div.youtube{
             grid-template-rows: 25% 25% 25% 25%;
             gap: 20px;
         
+        } 
+        .is-no-wrap{
+            flex-wrap: wrap;
         }
+        
  }
     
 

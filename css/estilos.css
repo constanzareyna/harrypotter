@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Importar*/
 /*FONT*/
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400&display=swap");
@@ -55,6 +56,16 @@
   }
   100% {
     transform: scale(1) rotateZ(360deg);
+  }
+}
+@keyframes slide-in-tl {
+  0% {
+    transform: translateY(-1000px) translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
   }
 }
 /*GRIDS*/
@@ -131,10 +142,6 @@
   flex-wrap: nowrap;
 }
 
-.is-no-wrap {
-  flex-wrap: wrap;
-}
-
 .is-justify-center {
   justify-content: center;
 }
@@ -153,6 +160,10 @@
 
 .is-space-between {
   justify-content: space-between;
+}
+
+.is-justify-end {
+  justify-content: end;
 }
 
 .reverse {
@@ -216,7 +227,7 @@
 
 /*Margin*/
 .margen {
-  margin-top: 20px;
+  margin-top: 40px;
   margin-left: 5px;
   margin-right: 5px;
   margin-bottom: 20px;
@@ -225,8 +236,6 @@
 /*Padding*/
 .margen-interno {
   padding-top: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
   padding-bottom: 20px;
 }
 
@@ -241,6 +250,7 @@ main {
 }
 
 body {
+  background-color: black;
   font-family: "Cormorant SC", serif;
   font-size: 1.1rem;
   color: black;
@@ -248,11 +258,14 @@ body {
   text-align: justify;
 }
 
+footer {
+  background-color: rgb(50, 49, 49);
+}
+
 p {
-  color: black;
+  color: white;
   text-align: justify;
   font-size: 20px;
-  width: 100%;
 }
 
 h1 {
@@ -266,7 +279,7 @@ h1 {
 }
 
 h2 {
-  color: black;
+  color: white;
   font-size: 2rem;
   text-decoration: underline;
   text-align: center;
@@ -280,14 +293,15 @@ h3 {
   margin-top: 100px;
 }
 
-span {
+li {
   background-color: transparent;
   padding: 5px 10px;
+  list-style: none;
   -webkit-animation: text-blur-out 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) alternate-reverse both;
   animation: text-blur-out 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) alternate-reverse both;
 }
 
-span:hover {
+li:hover {
   background-color: bisque;
   border-left: solid 12px firebrick;
 }
@@ -303,11 +317,6 @@ form {
   background: linear-gradient(90deg, rgba(154, 185, 186, 0.8477951636) 22%, rgb(96, 132, 150) 47%);
 }
 
-section {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
 /*ID*/
 #uno {
   width: 100%;
@@ -318,6 +327,14 @@ section {
   width: 300px;
   margin-right: 50px;
   border-radius: 50px;
+}
+
+#tres {
+  background-image: url(../multimedia/fondoazul.jpg);
+}
+
+#cuatro {
+  background-image: url(../multimedia/fondonro.jpg);
 }
 
 /*clases*/
@@ -343,18 +360,15 @@ section {
 }
 
 .logo {
-  max-width: 300px;
-  margin: 0 auto;
-  width: 100%;
+  margin-left: 20px;
+  margin-right: 350px;
+  width: 200px;
   animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
 
 .pie {
   font-size: 1rem;
-  background-color: bisque;
-  border: solid 5px white;
-  border-radius: 10px;
-  height: 230px;
+  color: white;
 }
 
 .image {
@@ -381,14 +395,8 @@ section {
   animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-.pprincipal {
-  display: flex;
-  align-content: center;
-  border: groove 3px bisque;
-}
-
 .imgpeliculas {
-  width: 400px;
+  width: 300px;
 }
 
 img {
@@ -396,10 +404,11 @@ img {
 }
 
 .linea {
-  border-top: 1px solid black;
+  border-top: 1px solid white;
   height: 2px;
-  max-width: 700px;
+  max-width: 650px;
   padding-top: 20px;
+  margin-left: 20px;
   margin: 20px auto 0 auto;
 }
 
@@ -410,7 +419,44 @@ img {
 }
 
 .casas {
-  width: 120px;
+  width: 80px;
+  padding-top: 15px;
+  margin-right: 30px;
+}
+
+.videotamaño {
+  width: 100%;
+}
+
+.parrafoprincipal {
+  color: white;
+  text-align: justify;
+  font-size: 20px;
+  width: 100%;
+  padding: 15px;
+  margin: 30px;
+  border: solid 2px grey;
+  line-height: 40px;
+}
+
+.fondopeli {
+  background-image: url(../multimedia/fondoazul.jpg);
+}
+
+.fondoperso {
+  background-image: url(../multimedia/fondonro.jpg);
+}
+
+.fondomulti {
+  background-image: url(../multimedia/fondorayo.jpg);
+}
+
+.fondoindex {
+  background-image: url(../multimedia/fondoparra.jpg);
+}
+
+.fondocontacto {
+  background-image: url(../multimedia/fondocontact.jpg);
 }
 
 /*Flexbox*/
@@ -424,10 +470,6 @@ img {
 
 .is-no-wrap {
   flex-wrap: nowrap;
-}
-
-.is-no-wrap {
-  flex-wrap: wrap;
 }
 
 .is-justify-center {
@@ -452,18 +494,6 @@ img {
 
 .reverse {
   flex-direction: row-reverse;
-}
-
-.menu-flex {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: nowrap;
-}
-
-.menu-flex2 {
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
 }
 
 .flex-imagen {
@@ -511,108 +541,26 @@ footer nav li {
   list-style: none;
 }
 
-/*SASS 2*/
-/*Operadores*/
-.menu-wrapper {
-  width: calc(60% - 30px);
-  padding: 15px;
-}
-
-.logo-wrapper {
-  width: calc(40% - 30px);
-  padding: 15px;
-}
-
-/*Extend*/
-.menunegro, .menublanco, .menugriscla, .menugris, .menugrisosc {
-  color: rgb(30, 30, 30);
-  text-decoration: none;
-  display: inline-block;
-  padding: 15px;
-  line-height: normal;
-  font-size: 22px;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.menugrisosc {
-  color: rgb(56, 52, 52);
-}
-
-.menugris {
-  color: grey;
-}
-
-.menugriscla {
-  color: rgb(154, 151, 151);
-}
-
-.menublanco {
-  color: rgb(253, 252, 252);
-}
-
-/*Mixin*/
-p {
-  width: 100%;
-  height: 100%;
-}
-
 /*EACH*/
 body {
-  background-image: url(https://img.freepik.com/free-photo/cardboard-sheet-paper-abstract-texture-background_7182-2105.jpg?size=626&ext=jpg);
+  background-color: black;
 }
 
 header {
-  background-image: url(https://img.freepik.com/free-photo/cardboard-sheet-paper-abstract-texture-background_7182-2105.jpg?size=626&ext=jpg);
+  background-color: black;
 }
 
 main {
-  background-image: url(https://img.freepik.com/free-photo/cardboard-sheet-paper-abstract-texture-background_7182-2105.jpg?size=626&ext=jpg);
-}
-
-footer {
-  background-image: url(https://img.freepik.com/free-photo/cardboard-sheet-paper-abstract-texture-background_7182-2105.jpg?size=626&ext=jpg);
-}
-
-/*Mapas*/
-/*mapas con each*/
-.boton-twitter {
-  border: groove 3px #55acee;
-}
-
-.boton-instagram {
-  border: groove 3px rgb(143, 52, 143);
-}
-
-.boton-youtube {
-  border: groove 3px red;
-}
-
-section div.twitter {
-  border: groove 3px #55acee;
-}
-
-section div.instagram {
-  border: groove 3px rgb(143, 52, 143);
-}
-
-section div.youtube {
-  border: groove 3px red;
+  background-color: black;
 }
 
 /*Responsive design con media queries*/
 /*desktop*/
 @media (min-width: 1024px) {
   /*header*/
-  .menu-wrapper {
-    width: calc(60% - 30px);
-    padding: 15px;
-  }
-  .logo-wrapper {
-    width: calc(40% - 30px);
-    padding: 15px;
-  }
   .image-wrapper {
+    display: flex;
+    justify-content: flex-start;
     width: 30%;
     padding: 15px;
   }
@@ -655,11 +603,6 @@ section div.youtube {
   .img8 {
     grid-area: img8;
   }
-  .menu-flex {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-  }
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -672,18 +615,15 @@ section div.youtube {
     grid-template-rows: 50% 50%;
     gap: 20px;
   }
+  .is-no-wrap {
+    flex-wrap: nowrap;
+  }
 }
 /*tablet*/
 @media (min-width: 600px) and (max-width: 1023px) {
-  .menu-wrapper {
-    width: 100%;
-    padding: 15px;
-  }
-  .logo-wrapper {
-    width: calc(40% - 30px);
-    padding: 15px;
-  }
   .image-wrapper {
+    display: flex;
+    justify-content: center;
     width: 100%;
     padding: 15px;
   }
@@ -726,11 +666,6 @@ section div.youtube {
   .img8 {
     grid-area: img8;
   }
-  .menu-flex {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-  }
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -743,24 +678,15 @@ section div.youtube {
     grid-template-rows: 25% 25% 25% 25%;
     gap: 20px;
   }
+  .is-no-wrap {
+    flex-wrap: wrap;
+  }
 }
 /*smartphone*/
 @media (max-width: 599px) {
-  .menu-wrapper {
-    width: 100%;
-    padding: 15px;
-    text-align: center;
-  }
-  .menu-flex {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-  .logo-wrapper {
-    width: 300px;
-    padding: 15px;
-  }
   .image-wrapper {
+    display: flex;
+    justify-content: center;
     width: 100%;
     padding: 15px;
   }
@@ -803,11 +729,6 @@ section div.youtube {
   .img8 {
     grid-area: img8;
   }
-  .menu-flex {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
   .grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -819,6 +740,9 @@ section div.youtube {
     grid-template-columns: 100%;
     grid-template-rows: 25% 25% 25% 25%;
     gap: 20px;
+  }
+  .is-no-wrap {
+    flex-wrap: wrap;
   }
 }
 

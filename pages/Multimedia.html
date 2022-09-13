@@ -2,56 +2,92 @@
 <html>
     
 <head>
+        <link  rel="icon" href="../multimedia/favicon.png" type="image/png">
         <link rel="stylesheet" href="../css/estilos.css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="No es una página oficial, solo es una página fandom de Harry Potter">
         <meta name="keywords" content="Harry Potter, Peliculas, JkRowling, Ron, Hermione, Voldenmort">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
 <title> Multimedia </title>
 
 </head>
-<body>
-  <header class="is-flex is-flex-wrap is-align-center is-justify-center">
-
-
-    <div class="logo-wrapper">
-        <img class="logo" src="../multimedia/pngegg.png" alt="HARRY POTTER">
-    </div>
-
-    <nav class="menu-wrapper">
-      <ul class="menu-flex">
-        <span><a class="menunegro" href="../index.html">Inicio</a></span>
-        <span><a class="menugrisosc" href="peliculas.html">Peliculas</a></span>
-        <span><a class="menugris" href="personajes.html">Personajes</a></span>
-        <span><a class="menugriscla" href="Multimedia.html">Multimedia</a></span>
-        <span><a class="menublanco" href="contacto.html">Contacto</a></span>
-      </ul>
-    </nav>
-    
-    </header>
-<main class="fondorojo">
+<body class="fondomulti">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light navbar navbar-dark bg-dark img">
+        <div class="is-flex is-flex-wrap is-align-center is-justify-center">
+          <div>
+              <img class="logo" src="../multimedia/pngegg.png" alt="HARRY POTTER">
+          </div>
+        </div>
   
-  <h1 class="titulo"> Multimedia</h1> 
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Menú</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="peliculas.html">Peliculas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="personajes.html">Personajes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Multimedia.html">Multimedia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+<main class="fondomulti">
+  
+  <h1 class="titulo margen-interno"> Multimedia</h1> 
 
-  <h2>Galeria de fotos</h2>
+  <h2 class="margen-interno">Galeria de fotos</h2>
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../multimedia/harry1.jpeg" class="d-block w-100" alt="harrypelea">
+      </div>
+      <div class="carousel-item">
+        <img src="../multimedia/harry2.jpg" class="d-block w-100" alt="harryronhermione">
+      </div>
+      <div class="carousel-item">
+        <img src="../multimedia/harry6.jpg" class="d-block w-100" alt="harryamigos">
+      </div>
+      <div class="carousel-item">
+        <img src="../multimedia/harrypotter.jpg" class="d-block w-100" alt="harroo">
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
 
-<section class="grid">
-<img src="../multimedia/harry1.jpeg" alt="harrypelea">
-<img src="../multimedia/harry2.jpg"  alt="harryronhermione">
-<img src="../multimedia/harry3.jfif" alt="grupo">
-<img src="../multimedia/harry4.jfif" alt="harryconamigos">
-<img src="../multimedia/harry5.jfif" alt="harryjoven">
-<img src="../multimedia/harry6.jpg" alt="harryamigos">
-</section>
-
-<h2> Música </h2>
+<h2 class="margen-interno"> Música </h2>
 <section class="flex-music">
 
 <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/ar/album/harry-potter-and-the-sorcerers-stone-original/89286124"></iframe>"
 </section>
 
-<h2>Video</h2>
+<h2 class="margen-interno">Video</h2>
 <div class="is-flex is-flex-wrap is-justify-center is-align-center">
    <iframe width="560" height="315" src="https://www.youtube.com/embed/Yu9jHZrwtjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
@@ -62,7 +98,7 @@
 <br>
 
 <footer>
-  <div class="pie is-flex is-flex-wrap is-align-center is-justify-center">
+  <div class="pie is-flex is-flex-wrap is-align-center is-justify-center margen-interno">
    <div>
 <img class="casas is-flex is-flex-wrap is-justify-center is-align-center" src="../multimedia/casashp.png">
    </div>
@@ -74,7 +110,7 @@
 </div>
 <section class="is-flex is-flex-wrap is-align-end">
   <div class="boton-twitter redes">
-   <a href="https://twitter.com/home?lang=es" target="_blank">
+   <a href="https://twitter.com/hpwikies?lang=es" target="_blank">
     <img src="../multimedia/twitter.png">
    </a>
   </div>
@@ -84,7 +120,7 @@
    </a>
   </div>
   <div class="boton-youtube redes">
-   <a href="https://www.youtube.com/" target="_blank">
+   <a href="https://www.youtube.com/watch?v=aiRzkaX-5MI&list=PLAna5Puze0TEr9sxk34ksojiX4Rq9F_Uy" target="_blank">
     <img src="../multimedia/youtube.png">
    </a>
   </div>
@@ -94,5 +130,6 @@
 </footer>
 
 </br>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
   </html>

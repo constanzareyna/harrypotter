@@ -1,36 +1,55 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link  rel="icon" href="../multimedia/favicon.png" type="image/png">
         <link rel="stylesheet" href="../css/estilos.css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="No es una página oficial, solo es una página fandom de Harry Potter">
         <meta name="keywords" content="Harry Potter, Peliculas, JkRowling, Ron, Hermione, Voldenmort">
-
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
         <title> Personajes </title>
     </head>
-<body>
-    <header class="is-flex is-flex-wrap is-align-center is-justify-center">
+<body id="cuatro">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light navbar navbar-dark bg-dark img">
+        <div class="is-flex is-flex-wrap is-align-center is-justify-center">
+          <div>
+              <img class="logo" src="../multimedia/pngegg.png" alt="HARRY POTTER">
+          </div>
+        </div>
+  
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Menú</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="peliculas.html">Peliculas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="personajes.html">Personajes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Multimedia.html">Multimedia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
 
-    <div class="logo-wrapper">
-        <img class="logo" src="../multimedia/pngegg.png" alt="HARRY POTTER">
-    </div>
-    
-    <nav class="menu-wrapper">
-      <ul class="menu-flex">
-        <span><a class="menunegro" href="../index.html">Inicio</a></span>
-        <span><a class="menugrisosc" href="peliculas.html">Peliculas</a></span>
-        <span><a class="menugris" href="personajes.html">Personajes</a></span>
-        <span><a class="menugriscla" href="Multimedia.html">Multimedia</a></span>
-        <span><a class="menublanco" href="contacto.html">Contacto</a></span>
-      </ul>
-    </nav>
- 
-</header> 
-
-<main class="grid-area">
+<main class="grid-area fondoperso">
    
-<h1 class="titulo"> Personajes</h1> 
+<h1 class="titulo margen-interno"> Personajes</h1> 
   
   <div>
     <h2>Harry Potter</h2>
@@ -70,7 +89,7 @@
       <br>
       
       <footer>
-        <div class="pie is-flex is-flex-wrap is-align-center is-justify-center">
+        <div class="pie is-flex is-flex-wrap is-align-center is-justify-center margen-interno">
          <div>
     <img class="casas is-flex is-flex-wrap is-justify-center is-align-center" src="../multimedia/casashp.png">
          </div>
@@ -82,7 +101,7 @@
      </div>
       <section class="is-flex is-flex-wrap is-align-end">
         <div class="boton-twitter redes">
-         <a href="https://twitter.com/home?lang=es" target="_blank">
+         <a href="https://twitter.com/hpwikies?lang=es" target="_blank">
           <img src="../multimedia/twitter.png">
          </a>
         </div>
@@ -92,7 +111,7 @@
          </a>
         </div>
         <div class="boton-youtube redes">
-         <a href="https://www.youtube.com/" target="_blank">
+         <a href="https://www.youtube.com/watch?v=aiRzkaX-5MI&list=PLAna5Puze0TEr9sxk34ksojiX4Rq9F_Uy" target="_blank">
           <img src="../multimedia/youtube.png">
          </a>
         </div>
@@ -101,5 +120,6 @@
         
     </footer>
     </br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
   </html>
